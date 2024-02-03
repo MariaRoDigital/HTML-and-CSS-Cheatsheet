@@ -11,19 +11,18 @@
 
 <body>
   <header <a href="top"></a>
-    <h1>HTML & CSS <s>Average</s> Unaverage Cheat Sheet<h1>
-        <h3>"It's dangerous to go alone! Take this."</h3>
+    <h1>HTML & CSS Cheat Sheet<h1>
+        <h3><span>"It's dangerous to go alone! Take this."</span></h3>
         <h4 class="author">created by: Maria Rodriguez</h4>
   </header>
 
   <nav>
-    <span><a href="#html">Full Explanation HTML</a></span>
-    <span><a href="#css">Full Explanation CSS</a></span>
-    <span><a href="#struggles">Beginner Struggles</a></span>
+    <span><a href="#html">Full Explanation HTML</a></span><span id="bar">|</span>
+    <span><a href="#css">Full Explanation CSS</a></span><span id="bar">|</span>
+    <span><a href="#struggles">Beginner Struggles`</a></span>
   </nav><!-- end of navigation-->
 
   <!-- main content -->
-
   <main>
 
     <!-- HTML table -->
@@ -39,7 +38,7 @@
       </thead>
 
       <tbody>
-        <tr>
+        <tr class="shade">
           <td class="code">&lt!Doctype&gt</td>
           <td>Including the DOCTYPE in a document ensures that the browser makes it's best attempt at following the
             relevant specifications in the document type. This <span class="italic">must</span> be the first thing in
@@ -55,7 +54,7 @@
           </td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&lthead&gt&lt/head&gt</td>
           <td>Here is where you link your meta info, stylesheets, and title. If there is an external link you need to
             use in your code, you can include it here. <span class="important">!Caution</span>: your head can get
@@ -70,7 +69,7 @@
           <td>&lttitle&gtyour cool title here&lt/title&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code"><span class="asterisk">*</span><br>&ltlink&gt</td>
           <td>links your stylesheets, font typeface, and other resources that have are from an external source</td>
           <td>&ltlink href=&quotresources/styles.css&quot type=&quottext/css&quot rel=&quotstylesheet&quot&gt</td>
@@ -83,7 +82,7 @@
           <td>&ltbody&gt<br>your page content here<br>&lt/body&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&ltfooter&gt&lt/footer&gt</td>
           <td>the last part of a webpage (optional depending on what the page is intended for). Here you can include an
             email, privacy policy, contact phone number, copyright symbols to a brand etc.</td>
@@ -96,7 +95,7 @@
           <td id="h1-example">&lth1&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&lth2&gt&lt/h2&gt</td>
           <td>indicates the importance of a title or subtitle by size. The default size for this heading is 30px</td>
           <td id="h2-example">&lth2&gt</td>
@@ -108,7 +107,7 @@
           <td class="h3-example">&lth3&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&lth4&gt&lt/h4&gt</td>
           <td>indicates the importance of a title or subtitle by size. The default size for this heading is 20px</td>
           <td class="h4-example">&lth4&gt</td>
@@ -120,7 +119,7 @@
           <td class="h5-example">&lth5&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&lth6&gt&lt/h6&gt</td>
           <td>indicates the importance of a title or subtitle by size. The default size for this heading is 16px</td>
           <td class="h6-example">&lth6&gt</td>
@@ -132,7 +131,7 @@
           <td>&ltjust some text hangin' out&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&ltspan&gt&lt/span&gt</td>
           <td>this tag is used to target specific words or parts of inline text you may want to style different than the
             rest of the text. It could be used as an alternative when no other tag makes sense. <span
@@ -150,7 +149,7 @@
           <td>&lth1 class=&quotmain-heading&quot&gtThe truth about the sword&lt/h1&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code"><span class="asterisk">*</span><br>&ltid&gt</td>
           <td>an attribute placed within any opening tag that let's you give your element a name that is unique to it.
             You can use the name to call on this element to style it in CSS. <span class="important">!caution</span>:
@@ -165,7 +164,7 @@
           <td>&ltdiv&gt<br><span class="indent">&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt</span></td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code"><span class="asterisk">*</span><br>&ltimg&gt</td>
           <td>allows you to insert an image into your content. To indicate the source, and properly link the image you
             must include the <span class="code">src</span> attribute</td>
@@ -180,7 +179,7 @@
             another line&lt/p&gt</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">&ltem&gt&lt/em&gt</td>
           <td>makes your text appear in italic</td>
           <td>&ltp&gtthis sword &ltem&gtwill&lt/em&gt get me through the dungeons&lt/p&gt</td>
@@ -195,6 +194,7 @@
 
     </table><!-- end of HTML table-->
 
+    <!-- sword image haha-->
     <p><a href="#top">back to top</a></p>
 
     <!-- begin CSS table -->
@@ -210,20 +210,20 @@
 
       <tbody>
 
-        <tr>
+        <tr class="shade">
           <td class="code">font-family</td>
           <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts to
             make sure your code works well on all modern browsers and older browsers</td>
           <td class="code">.blue-sword {<br><span class="indent">font-family: Helvetica, serif;</span><br>}</td>
         </tr>
-        <span class="indent">font-family:</span>
+
         <tr>
           <td class="code">font-size</td>
           <td>defines the size you want for the targeted element text</td>
           <td>.blue-sword {<br><span class="indent">font-size: 20px;</span><br>}</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">color</td>
           <td>assigns the color to the selected element text. The color can also be assigned using a HEX code: #000000
             or RGB: rgb(134, 133, 56)</td>
@@ -236,7 +236,7 @@
           <td>.blue-sword {<br><span>background-color: light blue;</span><br>{</td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">padding</td>
           <td>the space between the content and the border of a box. It creates a cushion to push the border farther
             from the content to help make content easier to read</td>
@@ -250,7 +250,7 @@
           <td></td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <td class="code">margin</td>
           <td>the space outside of the border. This can be described as a cushion to push other elements of different
             content boxes, away</td>
@@ -261,6 +261,7 @@
 
     </table><!-- end of CSS table -->
 
+    <!-- sword image haha-->
     <p><a href="#top">back to top</a></p>
 
     <!-- begin table 3-->
@@ -275,7 +276,7 @@
       </thead>
 
       <tbody>
-        <tr>
+        <tr class="shade">
           <td><span class="code">margin</span> (horizontal alignment)</td>
           <td>the best way to think about this type of alignment is to think about your box as it appears in default,
             margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the shorthand
@@ -295,7 +296,7 @@
           </td>
         </tr>
 
-        <tr>
+        <tr class="shade">
           <!-- add attribute to define type-->
           <td class="code">autoplay</td>
           <td>some browsers will not play a video automatically. You'll break your head trying to figure out why your
@@ -308,6 +309,7 @@
 
     </table><!-- end of table -->
 
+    <!-- sword image haha-->
     <p><a href="#top">back to top</a></p>
 
   </main>
