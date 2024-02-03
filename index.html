@@ -11,7 +11,7 @@
 <body>
   <header <a href="top"></a>
     <h1>HTML & CSS <s>Average</s> Unaverage Cheat Sheet<h1>
-        <!-- insert clever subtitle ;) -->
+        <h3>"It's dangerous to go alone! Take this."</h3>
   </header>
 
   <nav>
@@ -50,7 +50,9 @@
         <tr>
           <td class="code">&lthtml&gt&lt/html&gt</td>
           <td>Tells the browser that your document is an html document</td>
-          <td>&lthtml&gt<br><span class="indent">&lthead&gt&lt/head&gt</span><br>&ltbody&gt&lt/body&gt<br>&ltfooter&gt&lt/footer&gt<br>&lt/html&gt</td>
+          <td>&lthtml&gt<br><span
+              class="indent">&lthead&gt&lt/head&gt</span><br>&ltbody&gt&lt/body&gt<br>&ltfooter&gt&lt/footer&gt<br>&lt/html&gt
+          </td>
         </tr>
 
         <tr>
@@ -132,39 +134,50 @@
 
         <tr>
           <td class="code">&ltspan&gt&lt/span&gt</td>
-          <td>this tag is used to target specific words or parts of inline text you may want to style different than the rest of the text. It could be used as an alternative when no other tag makes sense. <span class="tip">tip</span>: This comes in handy when you want to style a word within a heading tag, paragraph tag or a navigation element
+          <td>this tag is used to target specific words or parts of inline text you may want to style different than the
+            rest of the text. It could be used as an alternative when no other tag makes sense. <span
+              class="tip">tip</span>: This comes in handy when you want to style a word within a heading tag, paragraph
+            tag or a navigation element
           </td>
           <td>&ltp&gthello, I am a &ltspan&gtblue&lt/span&gt sword&lt/p&gt</td>
         </tr>
 
         <tr>
           <td class="code"><span class="asterisk">*</span><br>&ltclass&gt</td>
-          <td>an attribute placed within most opening tags that let's you give your element a name to call on when styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure to use a dash (-) instead of a space</span></td>
+          <td>an attribute placed within most opening tags that let's you give your element a name to call on when
+            styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure to
+              use a dash (-) instead of a space</span></td>
           <td>&lth1 class=&quotmain-heading&quot&gtThe truth about the sword&lt/h1&gt</td>
         </tr>
 
         <tr>
           <td class="code"><span class="asterisk">*</span><br>&ltid&gt</td>
-          <td>an attribute placed within any opening tag that let's you give your element a name that is unique to it. You can use the name to call on this element to style it in CSS. <span class="important">!caution</span>: there must be no other element that has the same id name within your content</td>
+          <td>an attribute placed within any opening tag that let's you give your element a name that is unique to it.
+            You can use the name to call on this element to style it in CSS. <span class="important">!caution</span>:
+            there must be no other element that has the same id name within your content</td>
           <td>&lth1 id=&quotsword-title&quot&gtThe Sword You Need&lt/h1&gt</td>
         </tr>
 
         <tr>
           <td class="code">&ltdiv&gt&lt/div&gt</td>
-          <td>is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to separate by theme or section</td>
+          <td>is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to
+            separate by theme or section</td>
           <td>&ltdiv&gt<br><span class="indent">&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt</span></td>
         </tr>
 
         <tr>
           <td class="code"><span class="asterisk">*</span><br>&ltimg&gt</td>
-          <td>allows you to insert an image into your content. To indicate the source, and properly link the image you must include the <span class="code">src</span> attribute</td>
-          <td>relative link: &ltimg src=&quotresources/images/the-image&gt<br>absolute link: &ltimg src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt</td>
+          <td>allows you to insert an image into your content. To indicate the source, and properly link the image you
+            must include the <span class="code">src</span> attribute</td>
+          <td>relative link: &ltimg src=&quotresources/images/the-image&gt<br>absolute link: &ltimg
+            src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt</td>
         </tr>
 
         <tr>
           <td class="code"><span class="asterisk">*</span><br>&ltbr&gt</td>
           <td>allows you to break the line of text you are on to begin a new line of text</td>
-          <td>&ltp&gtthis is my first line of text&ltbr&gt<br>this is me starting another line&ltbr&gt<br>this is yet another line&lt/p&gt</td>
+          <td>&ltp&gtthis is my first line of text&ltbr&gt<br>this is me starting another line&ltbr&gt<br>this is yet
+            another line&lt/p&gt</td>
         </tr>
 
         <tr>
@@ -199,7 +212,8 @@
 
         <tr>
           <td class="code">font-family</td>
-          <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts to make sure your code works well on all modern browsers and older browsers</td>
+          <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts to
+            make sure your code works well on all modern browsers and older browsers</td>
           <td class="code">.blue-sword {<br><span class="indent">font-family: Helvetica, serif;</span><br>}</td>
         </tr>
         <span class="indent">font-family:</span>
@@ -211,7 +225,8 @@
 
         <tr>
           <td class="code">color</td>
-          <td>assigns the color to the selected element text. The color can also be assigned using a HEX code: #000000 or RGB: rgb(134, 133, 56)</td>
+          <td>assigns the color to the selected element text. The color can also be assigned using a HEX code: #000000
+            or RGB: rgb(134, 133, 56)</td>
           <td>.blue-sword {<br><span>color: blue;</span><br>}</td>
         </tr>
 
@@ -223,19 +238,22 @@
 
         <tr>
           <td class="code">padding</td>
-          <td>the space between the content and the border of a box. It creates a cushion to push the border farther from the content to help make content easier to read</td>
+          <td>the space between the content and the border of a box. It creates a cushion to push the border farther
+            from the content to help make content easier to read</td>
           <td rowspan="3"><img src="resources/images/padding-border-margin-removebg.png" type="#" alt=""></td>
         </tr>
 
         <tr>
           <td class="code">border</td>
-          <td>the space between padding and the margin. It can be described as the picture frame that holds the picture inside</td>
+          <td>the space between padding and the margin. It can be described as the picture frame that holds the picture
+            inside</td>
           <td></td>
         </tr>
 
         <tr>
           <td class="code">margin</td>
-          <td>the space outside of the border. This can be described as a cushion to push other elements of different content boxes, away</td>
+          <td>the space outside of the border. This can be described as a cushion to push other elements of different
+            content boxes, away</td>
           <td></td>
         </tr>
 
@@ -246,8 +264,7 @@
     <p><a href="#top">back to top</a></p>
 
     <!-- begin table 3-->
-    <h2 class="table-title">"It's dangerous to go alone! Take this."</h2>
-    <h3>Concepts that beginner Full Stack developers struggle with</h3>
+    <h2 class="table-title">Concepts that beginner Full Stack developers struggle with</h2>
 
     <table class="table3">
 
@@ -259,28 +276,29 @@
 
       <tbody>
         <tr>
-          <td>boxsizing</td>
-          <td></td>
-          <td></td>
+          <td><span class="code">margin</span> (horizontal alignment)</td>
+          <td>the best way to think about this type of alignment is to think about your box as it appears in default, margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the shorthand for this. This styles only left and right sides to automatically align the sides</td>
+          <td>margin: 0 auto 0 auto;</td>
         </tr>
 
         <tr>
-          <td>video source src</td>
-          <td></td>
-          <td></td>
+          <td class="code">video (source, src)</td>
+          <td>video has two words that point to the same attribute. One of the methods uses only one attribute to source a single video. The other method uses both attributes to source multiple videos at once</td>
+          <td>one video: &ltvideo src=&quotresources/videos/a-sword.mp4&quot&gtmessage for when video isn't supported here&lt/video&gt
+          <br><br>multiple videos:<br>&ltvideo&gt<br><span class="indent">&ltsource src=&quotresources/videos/a-sword.mp4</span>&quot&gt
+          <br>&ltsource src=&quotresources/videos/swords.mp4&quot&gt
+          </td>
         </tr>
 
         <tr>
-          <td>autoplay</td>
-          <td></td>
-          <td></td>
+          <!-- add attribute to define type-->
+          <td class="code">autoplay</td>
+          <td>some browsers will not play a video automatically. You'll break your head trying to figure out why your
+            video isn't playing when your code is all correct. The best way to make sure this doesn't happen is by using
+            the attribute "muted"</td>
+          <td>&ltvideo src=&quotresources/that-video&quot controls autoplay muted&gt&lt/video&gt</td>
         </tr>
 
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </tbody>
 
     </table><!-- end of table -->
