@@ -16,7 +16,7 @@
     <div><img src="resources/images/pixel-fire.png" id="fire2" alt="pixelated fire"></div>
     <h3>"It's dangerous to go alone! Take this."</h3>
     <h4 class="author">created by: Maria Rodriguez</h4>
-</header>
+  </header>
 
   <nav>
     <span><a href="#html">Full Explanation HTML</a></span><span id="bar">|</span>
@@ -27,292 +27,305 @@
   <!-- main content -->
   <main>
 
-    <!-- HTML table -->
-    <h2 class="table-title" id="html">HTML Crucials (code+meaning+example)</h2>
+    <section id="html">
+      <!-- HTML table -->
+      <h2 class="table-title">HTML Crucials (code+meaning+example)</h2>
 
-    <table class="table1">
-      <thead>
-        <tr>
-          <th>Code<br><span class="code-sub"><span class="asterisk">*</span> = has no closing tag</span></th>
-          <th>Meaning</th>
-          <th>Example</th>
-        </tr>
-      </thead>
+      <table class="table1">
+        <thead>
+          <tr>
+            <th>Code<br><span class="asterisk">*</span>
+              = has no closing tag</span>
+            </th>
+            <th>Meaning</th>
+            <th>Example</th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr class="shade">
-          <td class="code">&lt!Doctype&gt</td>
-          <td>Including the DOCTYPE in a document ensures that the browser makes it's best attempt at following the
-            relevant specifications in the document type. This <span class="italic">must</span> be the first thing in
-            your document</td>
-          <td>&lt!Doctype html&gt</td>
-        </tr>
+        <tbody>
+          <tr class="shade">
+            <td scope="row" class="mono">&lt!Doctype&gt</td>
+            <td>Including the DOCTYPE in a document ensures that the browser makes it's best attempt at following the
+              relevant specifications in the document type. This <span class="italic">must</span> be the first thing in
+              your document</td>
+            <td class="mono">&lt!Doctype html&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&lthtml&gt&lt/html&gt</td>
-          <td>Tells the browser that your document is an html document</td>
-          <td>&lthtml&gt<br><span
-              class="indent">&lthead&gt&lt/head&gt</span><br>&ltbody&gt<br>&ltfooter&gt&lt/footer&gt<br>&lt/body&gt<br>&lt/html&gt
-          </td>
-        </tr>
+          <tr>
+            <td class="mono">&lthtml&gt&lt/html&gt</td>
+            <td>Tells the browser that your document is an html document</td>
+            <td class="mono">&lthtml&gt<br>&lthead&gt&lt/head&gt<br>&ltbody&gt<br>&ltfooter&gt&lt/footer&gt<br>&lt/body&gt<br>&lt/html&gt
+            </td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&lthead&gt&lt/head&gt</td>
-          <td>Here is where you link your meta info, stylesheets, and title. If there is an external link you need to
-            use in your code, you can include it here. <span class="important">!Caution</span>: your head can get
-            crowded when linking many font types, consider adding them as a @fontface in CSS</td>
-          <td>&lthead&gt&ltlink href=&quotresources/style.css type=&quottext/css&quot
-            rel=&quotstylesheet&quot&gt&lt/head&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&lthead&gt&lt/head&gt</td>
+            <td>Here is where you link your meta info, stylesheets, and title. If there is an external link you need to
+              use in your code, you can include it here. <span class="important">!caution</span>: your head can get
+              crowded when linking many font types, consider adding them as a @fontface in CSS</td>
+            <td class="mono">&lthead&gt&ltlink href=&quotresources/style.css type=&quottext/css&quot
+              rel=&quotstylesheet&quot&gt&lt/head&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&lttitle&gt&lt/title&gt</td>
-          <td>Holds the title of your page. It will be the name displayed on the browser tab</td>
-          <td>&lttitle&gtyour cool title here&lt/title&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&lttitle&gt&lt/title&gt</td>
+            <td>Holds the title of your page. It will be the name displayed on the browser tab</td>
+            <td class="mono">&lttitle&gtyour cool title here&lt/title&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code"><span class="asterisk">*</span><br>&ltlink&gt</td>
-          <td>links your stylesheets, font typeface, and other resources that have are from an external source</td>
-          <td>&ltlink href=&quotresources/styles.css&quot type=&quottext/css&quot rel=&quotstylesheet&quot&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono"><span class="asterisk">*</span><br>&ltlink&gt</td>
+            <td>links your stylesheets, font typeface, and other resources that have are from an external source</td>
+            <td class="mono">&ltlink href=&quotresources/styles.css&quot type=&quottext/css&quot
+              rel=&quotstylesheet&quot&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&ltbody&gt&lt/body&gt</td>
-          <td>Includes all the page elements that will be shown on the user side. Anything that is within this area will
-            appear on the webpage.</td>
-          <td>&ltbody&gt<br>your page content here<br>&lt/body&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&ltbody&gt&lt/body&gt</td>
+            <td>Includes all the page elements that will be shown on the user side. Anything that is within this area
+              will
+              appear on the webpage.</td>
+            <td class="mono">&ltbody&gt<br>your page content here<br>&lt/body&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&ltfooter&gt&lt/footer&gt</td>
-          <td>the last part of a webpage (optional depending on what the page is intended for). Here you can include an
-            email, privacy policy, contact phone number, copyright symbols to a brand etc.</td>
-          <td>&ltfooter&gt<br>email: blah@blah.com<br>contact number: 123-456-7891<br>&lt/footer&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&ltfooter&gt&lt/footer&gt</td>
+            <td>the last part of a webpage (optional depending on what the page is intended for). Here you can include
+              an
+              email, privacy policy, contact phone number, copyright symbols to a brand etc.</td>
+            <td class="mono">&ltfooter&gt<br>email: blah@blah.com<br>contact number: 123-456-7891<br>&lt/footer&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&lth1&gt&lt/h1&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 36px</td>
-          <td id="h1-example">&lth1&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&lth1&gt&lt/h1&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 36px</td>
+            <td class="mono" id="h1-example">&lth1&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&lth2&gt&lt/h2&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 30px</td>
-          <td id="h2-example">&lth2&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&lth2&gt&lt/h2&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 30px</td>
+            <td class="mono" id="h2-example">&lth2&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&lth3&gt&lt/h3&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 24px</td>
-          <td class="h3-example">&lth3&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&lth3&gt&lt/h3&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 24px</td>
+            <td class="mono" id="h3-example">&lth3&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&lth4&gt&lt/h4&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 20px</td>
-          <td class="h4-example">&lth4&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&lth4&gt&lt/h4&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 20px</td>
+            <td class="mono" id="h4-example">&lth4&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&lth5&gt&lt/h5&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 18px</td>
-          <td class="h5-example">&lth5&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&lth5&gt&lt/h5&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 18px</td>
+            <td class="mono" id="h5-example">&lth5&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&lth6&gt&lt/h6&gt</td>
-          <td>indicates the importance of a title or subtitle by size. The default size for this heading is 16px</td>
-          <td class="h6-example">&lth6&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&lth6&gt&lt/h6&gt</td>
+            <td>indicates the importance of a title or subtitle by size. The default size for this heading is 16px</td>
+            <td class="h6-example">&lth6&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&ltp&gt&lt/p&gt</td>
-          <td>is the tag used for regular sized text in your content. The default size for this text is 16px</td>
-          <td>&ltjust some text hangin' out&gt</td>
-        </tr>
+          <tr>
+            <td class="mono">&ltp&gt&lt/p&gt</td>
+            <td>is the tag used for regular sized text in your content. The default size for this text is 16px</td>
+            <td class="mono">&ltp&gtjust some text hangin' out&lt/p&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&ltspan&gt&lt/span&gt</td>
-          <td>this tag is used to target specific words or parts of inline text you may want to style different than the
-            rest of the text. It could be used as an alternative when no other tag makes sense. <span
-              class="tip">tip</span>: This comes in handy when you want to style a word within a heading tag, paragraph
-            tag or a navigation element
-          </td>
-          <td>&ltp&gthello, I am a &ltspan&gtblue&lt/span&gt sword&lt/p&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&ltspan&gt&lt/span&gt</td>
+            <td>this tag is used to target specific words or parts of inline text you may want to style different than
+              the
+              rest of the text. It could be used as an alternative when no other tag makes sense. <span
+                class="tip">tip</span>: This comes in handy when you want to style a word within a heading tag,
+              paragraph
+              tag or a navigation element
+            </td>
+            <td class="mono">&ltp&gthello, I am a &ltspan&gtblue&lt/span&gt sword&lt/p&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code"><span class="asterisk">*</span><br>&ltclass&gt</td>
-          <td>an attribute placed within most opening tags that let's you give your element a name to call on when
-            styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure to
-              use a dash (-) instead of a space</span></td>
-          <td>&lth1 class=&quotmain-heading&quot&gtThe truth about the sword&lt/h1&gt</td>
-        </tr>
+          <tr>
+            <td class="mono"><span class="asterisk">*</span><br>&ltclass&gt</td>
+            <td>an attribute placed within most opening tags that let's you give your element a name to call on when
+              styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure to
+                use a dash (-) instead of a space</span></td>
+            <td class="mono">&lth1 class=&quotmain-heading&quot&gtThe truth about the sword&lt/h1&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code"><span class="asterisk">*</span><br>&ltid&gt</td>
-          <td>an attribute placed within any opening tag that let's you give your element a name that is unique to it.
-            You can use the name to call on this element to style it in CSS. <span class="important">!caution</span>:
-            there must be no other element that has the same id name within your content</td>
-          <td>&lth1 id=&quotsword-title&quot&gtThe Sword You Need&lt/h1&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono"><span class="asterisk">*</span><br>&ltid&gt</td>
+            <td>an attribute placed within any opening tag that let's you give your element a name that is unique to it.
+              You can use the name to call on this element to style it in CSS. <span class="important">!caution</span>:
+              there must be no other element that has the same id name within your content</td>
+            <td class="mono">&lth1 id=&quotsword-title&quot&gtThe Sword You Need&lt/h1&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&ltdiv&gt&lt/div&gt</td>
-          <td>is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to
-            separate by theme or section</td>
-          <td>&ltdiv&gt<br><span class="indent">&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt</span></td>
-        </tr>
+          <tr>
+            <td class="mono">&ltdiv&gt&lt/div&gt</td>
+            <td>is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to
+              separate by theme or section</td>
+            <td class="mono">&ltdiv&gt<br>&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code"><span class="asterisk">*</span><br>&ltimg&gt</td>
-          <td>allows you to insert an image into your content. To indicate the source, and properly link the image you
-            must include the <span class="code">src</span> attribute</td>
-          <td>relative link: &ltimg src=&quotresources/images/the-image&gt<br>absolute link: &ltimg
-            src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono"><span class="asterisk">*</span><br>&ltimg&gt</td>
+            <td>allows you to insert an image into your content. To indicate the source, and properly link the image you
+              must include the <span class="mono">src</span> attribute</td>
+            <td class="mono">relative link: &ltimg src=&quotresources/images/the-image&gt<br>absolute link: &ltimg
+              src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code"><span class="asterisk">*</span><br>&ltbr&gt</td>
-          <td>allows you to break the line of text you are on to begin a new line of text</td>
-          <td>&ltp&gtthis is my first line of text&ltbr&gt<br>this is me starting another line&ltbr&gt<br>this is yet
-            another line&lt/p&gt</td>
-        </tr>
+          <tr>
+            <td class="mono"><span class="asterisk">*</span><br>&ltbr&gt</td>
+            <td>allows you to break the line of text you are on to begin a new line of text</td>
+            <td class="mono">&ltp&gtthis is my first line of text&ltbr&gt<br>this is me starting another
+              line&ltbr&gt<br>this is yet
+              another line&lt/p&gt</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">&ltem&gt&lt/em&gt</td>
-          <td>makes your text appear in italic</td>
-          <td>&ltp&gtthis sword &ltem&gtwill&lt/em&gt get me through the dungeons&lt/p&gt</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">&ltem&gt&lt/em&gt</td>
+            <td>makes your text appear in italic</td>
+            <td class="mono">&ltp&gtthis sword &ltem&gtwill&lt/em&gt get me through the dungeons&lt/p&gt</td>
+          </tr>
 
-        <tr>
-          <td class="code">&ltstrong&gt&lt/strong&gt</td>
-          <td>makes your text appear bold</td>
-          <td>&ltp&gtthis &ltstrong>sword&lt/strong&gt will get me through the dungeons&lt/p&gt</td>
-        </tr>
-      </tbody>
+          <tr>
+            <td class="mono">&ltstrong&gt&lt/strong&gt</td>
+            <td>makes your text appear bold</td>
+            <td class="mono">&ltp&gtthis &ltstrong>sword&lt/strong&gt will get me through the dungeons&lt/p&gt</td>
+          </tr>
+        </tbody>
 
-    </table><!-- end of HTML table-->
+      </table><!-- end of HTML table-->
+    </section>
 
-    <!-- sword image haha-->
-    <p><a href="#top">back to top</a></p>
+    <p><a href="#top" class="ttlink">back to top</a></p>
 
-    <!-- begin CSS table -->
-    <h2 class="table-title" id="css">The CSS Crucials (code+meaning+example)</h2>
+    <section id="css">
+      <!-- begin CSS table -->
+      <h2 class="table-title">The CSS Crucials (code+meaning+example)</h2>
 
-    <table class="table2">
+      <table class="table2">
 
-      <thead>
-        <th>Code</th>
-        <th>Meaning</th>
-        <th>Example</th>
-      </thead>
+        <thead>
+          <th scope="col">Code</th>
+          <th scope="col">Meaning</th>
+          <th scope="col">Example</th>
+        </thead>
 
-      <tbody>
+        <tbody>
 
-        <tr class="shade">
-          <td class="code">font-family</td>
-          <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts to
-            make sure your code works well on all modern browsers and older browsers</td>
-          <td class="code">.blue-sword {<br><span class="indent">font-family: Helvetica, serif;</span><br>}</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">font-family</td>
+            <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts
+              to
+              make sure your code works well on all modern browsers and older browsers</td>
+            <td class="mono">.blue-sword {<br>font-family: Helvetica, serif;<br>}</td>
+          </tr>
 
-        <tr>
-          <td class="code">font-size</td>
-          <td>defines the size you want for the targeted element text</td>
-          <td>.blue-sword {<br><span class="indent">font-size: 20px;</span><br>}</td>
-        </tr>
+          <tr>
+            <td class="mono">font-size</td>
+            <td>defines the size you want for the targeted element text</td>
+            <td class="mono">.blue-sword {<br>font-size: 20px;<br>}</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">color</td>
-          <td>assigns the color to the selected element text. The color can also be assigned using a HEX code: #000000
-            or RGB: rgb(134, 133, 56)</td>
-          <td>.blue-sword {<br><span>color: blue;</span><br>}</td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">color</td>
+            <td>assigns the color to the selected element text. The color can also be assigned using a HEX code: #000000
+              or RGB: rgb(134, 133, 56)</td>
+            <td class="mono">.blue-sword {<br><span>color: blue;</span><br>}</td>
+          </tr>
 
-        <tr>
-          <td class="code">background-color</td>
-          <td>assigns the background color of the selected element</td>
-          <td>.blue-sword {<br><span>background-color: light blue;</span><br>{</td>
-        </tr>
+          <tr>
+            <td class="mono">background-color</td>
+            <td>assigns the background color of the selected element</td>
+            <td class="mono">.blue-sword {<br><span>background-color: light blue;</span><br>{</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">padding</td>
-          <td>the space between the content and the border of a box. It creates a cushion to push the border farther
-            from the content to help make content easier to read</td>
-          <td rowspan="3"><img src="resources/images/padding-border-margin-removebg.png" type="#" alt=""></td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">padding</td>
+            <td>the space between the content and the border of a box. It creates a cushion to push the border farther
+              from the content to help make content easier to read</td>
+            <td rowspan="3"><img src="resources/images/padding-border-margin-removebg.png" type="image/png" alt=""></td>
+          </tr>
 
-        <tr>
-          <td class="code">border</td>
-          <td>the space between padding and the margin. It can be described as the picture frame that holds the picture
-            inside</td>
-          <td></td>
-        </tr>
+          <tr>
+            <td class="mono">border</td>
+            <td>the space between padding and the margin. It can be described as the picture frame that holds the
+              picture
+              inside</td>
+          </tr>
 
-        <tr class="shade">
-          <td class="code">margin</td>
-          <td>the space outside of the border. This can be described as a cushion to push other elements of different
-            content boxes, away</td>
-          <td></td>
-        </tr>
+          <tr class="shade">
+            <td class="mono">margin</td>
+            <td>the space outside of the border. This can be described as a cushion to push other elements of different
+              content boxes, away</td>
+          </tr>
 
-      </tbody>
+        </tbody>
 
-    </table><!-- end of CSS table -->
+      </table><!-- end of CSS table -->
+    </section>
 
-    <!-- sword image haha-->
-    <p><a href="#top">back to top</a></p>
+    <p><a href="#top" class="ttlink">back to top</a></p>
 
     <!-- begin table 3-->
-    <h2 class="table-title" id="struggles">Concepts that beginner Full Stack developers struggle with</h2>
+    <section id="struggles">
+      <h2 class="table-title">Concepts that beginner Full Stack developers struggle with</h2>
 
-    <table class="table3">
+      <table class="table3">
 
-      <thead>
-        <th>Code</th>
-        <th>Meaning</th>
-        <th>Example</th>
-      </thead>
+        <thead>
+          <th span="col">Code</th>
+          <th span="col">Meaning</th>
+          <th span="col">Example</th>
+        </thead>
 
-      <tbody>
-        <tr class="shade">
-          <td><span class="code">margin</span> (horizontal alignment)</td>
-          <td>the best way to think about this type of alignment is to think about your box as it appears in default,
-            margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the shorthand
-            for this. This styles only left and right sides to automatically align the sides</td>
-          <td>margin: 0 auto 0 auto;</td>
-        </tr>
+        <tbody>
+          <tr class="shade">
+            <td><span class="mono">margin</span> (horizontal alignment)</td>
+            <td>the best way to think about this type of alignment is to think about your box as it appears in default,
+              margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the shorthand
+              for this. This styles only left and right sides to automatically align the sides</td>
+            <td class="mono">margin: 0 auto 0 auto;</td>
+          </tr>
 
-        <tr>
-          <td class="code">video (source, src)</td>
-          <td>video has two words that point to the same attribute. One of the methods uses only one attribute to source
-            a single video. The other method uses both attributes to source multiple videos at once</td>
-          <td>one video: &ltvideo src=&quotresources/videos/a-sword.mp4&quot&gtmessage for when video isn't supported
-            here&lt/video&gt
-            <br><br>multiple videos:<br>&ltvideo&gt<br><span class="indent">&ltsource
-              src=&quotresources/videos/a-sword.mp4</span>&quot&gt
-            <br>&ltsource src=&quotresources/videos/swords.mp4&quot&gt
-          </td>
-        </tr>
+          <tr>
+            <td class="mono">video (source, src)</td>
+            <td>video has two words that point to the same attribute. One of the methods uses only one attribute to
+              source
+              a single video. The other method uses both attributes to source multiple videos at once</td>
+            <td class="mono">one video: &ltvideo src=&quotresources/videos/a-sword.mp4&quot&gtmessage for when video
+              isn't supported
+              here&lt/video&gt
+              <br><br>multiple videos: &ltvideo&gt<br>&ltsource
+                src=&quotresources/videos/a-sword.mp4&quot&gt
+              <br>&ltsource src=&quotresources/videos/swords.mp4&quot&gt&lt/video&gt
+            </td>
+          </tr>
 
-        <tr class="shade">
-          <!-- add attribute to define type-->
-          <td class="code">autoplay</td>
-          <td>some browsers will not play a video automatically. You'll break your head trying to figure out why your
-            video isn't playing when your code is all correct. The best way to make sure this doesn't happen is by using
-            the attribute "muted"</td>
-          <td>&ltvideo src=&quotresources/that-video&quot controls autoplay muted&gt&lt/video&gt</td>
-        </tr>
+          <tr class="shade">
+            <!-- add attribute to define type-->
+            <td class="mono">autoplay</td>
+            <td>some browsers will not play a video automatically. You'll break your head trying to figure out why your
+              video isn't playing when your code is all correct. The best way to make sure this doesn't happen is by
+              using
+              the attribute "muted"</td>
+            <td class="mono">&ltvideo src=&quotresources/that-video&quot controls autoplay muted&gt&lt/video&gt</td>
+          </tr>
 
-      </tbody>
+        </tbody>
 
-    </table><!-- end of table -->
+      </table><!-- end of table -->
+    </section>
 
-    <!-- sword image haha-->
-    <p><a href="#top">back to top</a></p>
+    <p><a href="#top" class="ttlink">back to top</a></p>
 
   </main>
 
