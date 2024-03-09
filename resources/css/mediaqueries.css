@@ -1,43 +1,227 @@
 .container {
   max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 @media (max-width: 1536px) {
   .container {
-    max-width: 1280px;
+    min-width: 1280px;
   }
 }
 
 @media (max-width: 1280px) {
   .container {
-    max-width: 1024px;
+    min-width: 1024px;
+  }
+
+  .table1 td,
+  .table2 td,
+  .table3 td {
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 2rem 1.25rem;
   }
 }
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 640px;
+    min-width: 640px;
+  }
+
+  .fire1 {
+    left: 0.625rem;
+  }
+
+  .fire2 {
+    right: 0.625rem;
+  }
+
+  .author {
+    left: 1rem;
+  }
+
+  nav {
+    padding: 3rem;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px),
+(orientation: landscape) {
   .container {
-    max-width: 475px;
+    min-width: 475px;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 1rem;
+    font-size: .875rem;
   }
 }
 
 @media (max-width: 475px) {
   .container {
-    max-width: 100%;
+    min-width: 100%;
+  }
+
+  header {
+    padding: 0;
+    height: 16rem;
+    background-image: url("../images/sword-flip-resize.jpg");
+    background-size: 68%;
+  }
+
+  .header-title {
+    width: 80%;
+  }
+
+  header h1 {
+    color: white;
+    font-size: 1.375rem;
+    background-color: rgb(24 0 0 / 55%);
+    border: none;
+    border-radius: .1rem;
+    padding: .4rem;
+  }
+
+  header h3 {
+    color: white;
+    margin-top: 3rem;
+    padding: .2rem;
+    width: 60%;
+    font-size: 0.875rem;
+    background-color: rgb(24 0 0 / 55%);
+    border: none;
+  }
+
+  .author {
+    top: 15rem;
+    left: .50rem;
+    font-size: 0.50rem;
+  }
+
+  .fire {
+    width: 5rem;
+    top: 8rem;
+  }
+
+  .fire1 {
+    position: absolute;
+    left: 0;
+  }
+
+  .fire2 {
+    position: absolute;
+    right: 0;
+  }
+
+  nav {
+    width: 100%;
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  nav span {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 0.55rem;
+  }
+
+  .bar {
+    font-size: .5rem;
+    padding-right: .1rem;
+    padding-left: .3rem
+  }
+
+  .ttlink {
+    font-size: 0.5625rem;
+    left: 1.5rem;
+  }
+
+  table {
+    table-layout: fixed;
+    width: .5rem;
+    font-size: .875rem;
+  }
+
+  .table-title {
+    padding: 1rem .6rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .ti2,
+  .ti3 {
+    padding-top: 1rem;
+  }
+
+  .table1,
+  .table2,
+  .table3 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    padding: 0;
+  }
+
+  .t2,
+  .t3 {
+    padding-bottom: 1rem;
+  }
+
+  .table1 td,
+  .table2 td,
+  .table3 td {
+    padding: .8rem .5rem;
+  }
+
+  .table1 td:nth-child(2),
+  .table2 td:nth-child(2),
+  .table3 td:nth-child(2) {
+    text-align: left;
+  }
+
+  #h1-example {
+    font-size: 1.5rem;
+  }
+
+  #h2-example {
+    font-size: 1.25rem;
+  }
+
+  #h3-example {
+    font-size: 1rem;
+  }
+
+  #h4-example {
+    font-size: 0.83rem;
+  }
+
+  #h5-example {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  footer p,
+  footer .email {
+    font-size: 0.5625rem;
+  }
+
+  footer p {
+    margin-bottom: 0.1rem;
   }
 }

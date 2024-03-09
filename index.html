@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
   <link href="resources/css/font.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/mediaqueries.css" type="text/css" rel="stylesheet">
   <title>HTML & CSS Cheat Sheet</title>
 </head>
 
 <body>
-  <header class="container"><a href="top"></a>
+
+  <!-- header begins -->
+  <header><a href="top"></a>
     <div><img src="resources/images/pixel-fire.png" class="fire fire1" alt="pixelated fire"></div>
     <div class="header-title">
       <h1>HTML & CSS Cheat Sheet</h1>
@@ -18,21 +22,22 @@
     </div>
     <h4 class="author">created by: Maria Rodriguez</h4>
     <div><img src="resources/images/pixel-fire.png" class="fire fire2" alt="pixelated fire"></div>
-  </header>
+  </header><!-- header ends -->
 
+  <!-- nav begins-->
   <nav>
-    <span><a href="#html">Full Explanation HTML</a></span><span id="bar">|</span>
-    <span><a href="#css">Full Explanation CSS</a></span><span id="bar">|</span>
+    <span><a href="#html">Full Explanation HTML</a></span><span class="bar">|</span>
+    <span><a href="#css">Full Explanation CSS</a></span><span class="bar">|</span>
     <span><a href="#struggles">Beginner Struggles`</a></span>
-  </nav><!-- end of navigation-->
+  </nav><!-- nav ends-->
 
   <!-- main content -->
   <main>
 
-    <section class="container">
+    <div class="container">
       <section id="html">
         <!-- HTML table -->
-        <h2 class="table-title">HTML Crucials (code+meaning+example)</h2>
+        <h2 class="table-title ti1">HTML Crucials (code+meaning+example)</h2>
 
         <table class="table1">
           <thead>
@@ -219,17 +224,16 @@
             </tr>
           </tbody>
 
-        </table><!-- end of HTML table-->
+        </table>
       </section>
+    </div><!-- end of HTML table-->
 
-      <span><a href="#top" class="ttlink">back to top</a></span>
-    </section>
+    <a href="#top" class="ttlink">back to top</a>
 
-
-    <section class="container">
+    <!-- begin CSS table -->
+    <div class="container">
       <section id="css">
-        <!-- begin CSS table -->
-        <h2 class="table-title">The CSS Crucials (code+meaning+example)</h2>
+        <h2 class="table-title ti2">The CSS Crucials (code+meaning+example)</h2>
 
         <table class="table2">
 
@@ -243,7 +247,8 @@
 
             <tr class="shade">
               <td class="mono">font-family</td>
-              <td>indicates the type of font style used on the selected element. tip = consider including fallback fonts
+              <td>indicates the type of font style used on the selected element. tip = consider including fallback
+                fonts
                 to
                 make sure your code works well on all modern browsers and older browsers</td>
               <td class="mono">.blue-sword {<br>font-family: Helvetica, serif;<br>}</td>
@@ -271,10 +276,12 @@
 
             <tr class="shade">
               <td class="mono">padding</td>
-              <td>the space between the content and the border of a box. It creates a cushion to push the border farther
+              <td>the space between the content and the border of a box. It creates a cushion to push the border
+                farther
                 from the content to help make content easier to read</td>
               <td rowspan="3">
-                <div class="img-container"><img src="resources/images/padding-border-margin-removebg.png" class="box" type="image/png" alt="">
+                <div class="img-container"><img src="resources/images/padding-border-margin-removebg.png" class="box"
+                    type="image/png" alt="">
                 </div>
               </td>
             </tr>
@@ -297,14 +304,14 @@
 
         </table><!-- end of CSS table -->
       </section>
+    </div>
 
-      <span><a href="#top" class="ttlink">back to top</a></span>
-    </section>
+    <a href="#top" class="ttlink">back to top</a>
 
     <!-- table 3 begins-->
-    <section class="container">
+    <div class="container">
       <section id="struggles">
-        <h2 class="table-title">Concepts that beginner Full Stack developers struggle with</h2>
+        <h2 class="table-title ti3">Concepts that beginner Full Stack developers struggle with</h2>
 
         <table class="table3">
 
@@ -354,19 +361,18 @@
 
         </table><!-- end of table 3 -->
       </section>
+    </div>
 
-      <span><a href="#top" class="ttlink">back to top</a></span>
-    </section>
-
+    <a href="#top" class="ttlink">back to top</a>
   </main>
 
   <!-- footer begins -->
-  <section class="container">
+  <div class="container">
     <footer>
       <p>Have a business inquiry? Shoot me a message</p>
       <span class="email">email: <a href="mailto:mariadrodriguez.va@gmail.com">mariadrodriguez.va@gmail.com</a></span>
     </footer>
-  </section><!-- footer ends -->
+  </div><!-- footer ends -->
 
 </body>
 
