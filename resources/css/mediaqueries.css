@@ -49,6 +49,11 @@
   .fire2 {
     right: 0.625rem;
   }
+
+  main {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* sm */
@@ -67,6 +72,10 @@
 
   nav {
     margin: 4rem 0;
+  }
+  
+  section {
+    grid-template-columns: 1fr;
   }
 
   .fire {
@@ -145,15 +154,6 @@
 
   .bar {
     display: none;
-  }
-
-  main {
-    width: 100%;
-  }
-
-
-  section {
-    grid-template-columns: 1fr;
   }
 
   section div {
