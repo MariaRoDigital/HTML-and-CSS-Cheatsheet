@@ -11,6 +11,14 @@
     min-width: 1024px;
   }
 
+  .fire1 {
+    left: 2rem;
+  }
+
+  .fire2 {
+    right: 2rem;
+  }
+
   section {
     grid-template-columns: 25% 50% 25%;
   }
@@ -25,10 +33,6 @@
 
   main {
     width: 96%;
-  }
-
-  section div {
-    padding: .75rem .5rem;
   }
 }
 
@@ -64,6 +68,10 @@
 
 /* xs */
 @media (max-width: 475px) {
+  html {
+    font-size: 16px;
+  }
+
   body {
     min-width: 100%;
   }
@@ -89,6 +97,11 @@
     border: none;
   }
 
+  /* to isolate header to place move pixel fire behind headers */
+  .isolate {
+    isolation: isolate;
+  }
+
   .author {
     top: 15rem;
     left: .50rem;
@@ -96,8 +109,9 @@
   }
 
   .fire {
-    width: 5rem;
+    width: 6rem;
     top: 8rem;
+    z-index: -1;
   }
 
   .fire1 {
@@ -111,30 +125,33 @@
   }
 
   nav {
-    display: inline-block;
-    margin: 2.5rem 0;
+    display: grid;
+    margin: 2rem 0;
   }
 
   nav span {
-    margin: 0;
+    margin-top: .4rem;
   }
 
   nav a {
-    font-size: 0.59375rem;
+    font-size: .7rem;
   }
 
-  .bar {
-    font-size: .5rem;
-    padding-right: .1rem;
-    padding-left: .4rem;
-  }
+.bar {
+  display: none;
+}
 
   main {
     width: 100%;
   }
 
+
   section {
     grid-template-columns: 1fr;
+  }
+
+  section div {
+    padding: 1rem;
   }
 
   div p:has(.asterisk) {
@@ -147,10 +164,6 @@
   }
 
   .sub-title {
-    display: none;
-  }
-
-  .has-break {
     display: none;
   }
 
