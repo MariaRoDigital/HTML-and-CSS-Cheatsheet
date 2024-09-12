@@ -31,6 +31,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: url("../../resources/images/sword.jpg");
   background-size: contain;
   background-position: center;
@@ -41,10 +42,7 @@ header {
 .header-content {
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
-  text-align: center;
-  margin: auto;
 }
 
 header h1,
@@ -58,11 +56,10 @@ header p {
 
 header p {
   margin-top: 6rem;
-  z-index: 2;
 }
 
 .fire {
-  width: 11rem;
+  width: 12rem;
   top: 8.5rem;
   z-index: 1;
 }
@@ -126,6 +123,13 @@ section div {
   justify-content: center;
   text-align: center;
   padding: 1rem;
+
+  /* this fixed my body overflowing my html */
+  min-width: 96%;
+}
+
+div .code:has(.asterisk) {
+  display: block;
 }
 
 section .meaning {
@@ -141,10 +145,7 @@ section .meaning {
   font-size: var(--p-clamp);
   position: relative;
   left: 1rem;
-  font-size: 1.25rem;
   margin: 2rem 0;
-  font-size: 1rem;
-
 }
 
 .asterisk {
