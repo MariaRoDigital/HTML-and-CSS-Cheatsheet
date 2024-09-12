@@ -1,11 +1,13 @@
+/* @link https://utopia.fyi/clamp/calculator?a=320,1440,23—50|19—40|18—34|17—30|16—26|14—20|16—18&p=fluid- */
+
 :root {
-  --h1-clamp: clamp(2.66rem, 5vw, 3rem);
-  --h2-clamp: clamp(2.44rem, 5vw, 2.75rem);
-  --h3-clamp: clamp(2.22rem, 5vw, 2.50rem);
-  --h4-clamp: clamp(2rem, 5vw, 2.25rem);
-  --h5-clamp: clamp(1.77rem, 5vw, 2rem);
-  --h6-clamp: clamp(1.55rem, 5vw, 1.75rem);
-  --p-clamp: clamp(16px, 1vw, 1rem)
+  --fluid-h1-23-50: clamp(1.4375rem, 0.9554rem + 2.4107vw, 3.125rem);
+  --fluid-h2-19-40: clamp(1.1875rem, 0.8125rem + 1.875vw, 2.5rem);
+  --fluid-h3-18-34: clamp(1.125rem, 0.8393rem + 1.4286vw, 2.125rem);
+  --fluid-h4-17-30: clamp(1.0625rem, 0.8304rem + 1.1607vw, 1.875rem);
+  --fluid-h5-16-26: clamp(1rem, 0.8214rem + 0.8929vw, 1.625rem);
+  --fluid-h6-14-20: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+  --fluid-p-16-18: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
 }
 
 body {
@@ -19,10 +21,34 @@ body {
 }
 
 h1 {
-  font-size: var(--h1-clamp);
+  font-size: var(--fluid-h1-23-50);
 }
 
-h2 .bold {
+h2 {
+  font-size: var(--fluid-h2-19-40);
+}
+
+h3 {
+  font-size: var(--fluid-h3-18-34);
+}
+
+h4 {
+  font-size: var(--fluid-h4-17-30);
+}
+
+h5 {
+  font-size: var(--fluid-h5-16-26);
+}
+
+h6 {
+  font-size: var(--fluid-h6-14-20);
+}
+
+p {
+  font-size: var(--fluid-p-16-18);
+}
+
+.bold {
   font-weight: bold;
 }
 
@@ -54,14 +80,19 @@ header p {
   padding: .25rem 1rem;
 }
 
-header p {
+header p:not([class="author"]) {
   margin-top: 6rem;
+}
+
+/* to isolate header to place move pixel fire behind headers */
+.isolate {
+  isolation: isolate;
 }
 
 .fire {
   width: 12rem;
   top: 8.5rem;
-  z-index: 1;
+  z-index: -1;
 }
 
 .fire1 {
@@ -77,8 +108,9 @@ header p {
 
 .author {
   position: absolute;
-  top: 20rem;
-  left: 1rem;
+  top: 19.75rem;
+  left: 0;
+  border: none;
   color: rgb(255, 253, 253);
 }
 
@@ -90,7 +122,7 @@ nav {
 
 nav span {
   margin: 0 .5rem;
-  font-size: var(--p-clamp);
+  font-size: var(--fluid-p-16-18);
 }
 
 a:link {
@@ -142,7 +174,7 @@ section .meaning {
 
 .back-to-top-link {
   max-width: fit-content;
-  font-size: var(--p-clamp);
+  font-size: var(--fluid-p-16-18);
   position: relative;
   left: 1rem;
   margin: 2rem 0;
