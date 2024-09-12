@@ -49,10 +49,6 @@
   .fire2 {
     right: 0.625rem;
   }
-
-  .author {
-    left: 1rem;
-  }
 }
 
 /* sm */
@@ -61,8 +57,24 @@
     min-width: 475px;
   }
 
+  header {
+    height: 20rem;
+  }
+
+  .header-content {
+    width: 90%;
+  }
+
   nav {
-    margin: 2rem 0;
+    margin: 4rem 0;
+  }
+
+  .fire {
+    width: 8rem;
+  }
+
+  .author {
+    top: 17.75rem;
   }
 }
 
@@ -97,13 +109,8 @@
     border: none;
   }
 
-  /* to isolate header to place move pixel fire behind headers */
-  .isolate {
-    isolation: isolate;
-  }
-
   .author {
-    top: 15rem;
+    top: 11.5rem;
     left: .50rem;
     font-size: 0.50rem;
   }
@@ -111,7 +118,6 @@
   .fire {
     width: 6rem;
     top: 8rem;
-    z-index: -1;
   }
 
   .fire1 {
@@ -137,9 +143,9 @@
     font-size: .7rem;
   }
 
-.bar {
-  display: none;
-}
+  .bar {
+    display: none;
+  }
 
   main {
     width: 100%;
