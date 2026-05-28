@@ -1,4 +1,3 @@
 # HTML and CSS Project
-### Codecademy Challenge
 
-The challenge is to make a cheat sheet using learned HTML and CSS code
+I've created a cheat sheet that can be used to refresh your knowledge on HTML, CSS, and Javascript (coming soon)
