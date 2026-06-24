@@ -12,12 +12,6 @@
 
 body {
   font-family: ralewaymedium, sans-serif;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer"
 }
 
 h1 {
@@ -115,14 +109,17 @@ header p:not([class="author"]) {
 }
 
 nav {
-  text-align: center;
+  display: grid;
+  justify-content: center;
   text-transform: lowercase;
-  margin: 5rem 0;
+  margin: 4rem 0;
 }
 
-nav span {
-  margin: 0 .5rem;
-  font-size: var(--fluid-p-16-18);
+nav li:not(:first-child)::before {
+  content: '|';
+  height: 1rem;
+  color: black;
+  padding-inline: 1rem;
 }
 
 a:link {
@@ -139,8 +136,7 @@ a:hover {
 }
 
 main {
-  width: 84%;
-  margin: auto;
+  justify-self: center;
 }
 
 section {
@@ -155,9 +151,10 @@ section div {
   justify-content: center;
   text-align: center;
   padding: 1rem;
+}
 
-  /* this fixed my body overflowing my html */
-  min-width: 96%;
+* {
+  outline: blue solid 1px;
 }
 
 div .code:has(.asterisk) {

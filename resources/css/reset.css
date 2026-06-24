@@ -1,34 +1,77 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
   scroll-behavior: smooth;
   color: rgb(90, 90, 90);
 }
 
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
+/* Was modified from Josh's Custom CSS https://www.joshwcomeau.com/css/custom-css-reset/ Reset but also includes custom styling I came up with on my own
 */
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
-input, button, textarea, select {
+
+/* width fixes audio controls from overflowing container and block helps have more control for styling */
+audio {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
-#root, #__next {
+
+ol,
+ul {
+  list-style: none;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 68ch;
+}
+
+#root,
+#__next {
   isolation: isolate;
 }
