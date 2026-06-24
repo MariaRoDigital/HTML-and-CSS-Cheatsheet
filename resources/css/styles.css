@@ -153,10 +153,6 @@ section div {
   padding: 1rem;
 }
 
-* {
-  outline: blue solid 1px;
-}
-
 div .code:has(.asterisk) {
   display: block;
 }
