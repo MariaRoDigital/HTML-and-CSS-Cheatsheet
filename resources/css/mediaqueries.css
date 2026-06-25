@@ -3,6 +3,10 @@
   nav ul {
     display: flex;
   }
+
+  main {
+    width: 80%;
+  }
 }
 
 /* xl */
@@ -18,11 +22,7 @@
 
 /* lg */
 @media (max-width: 1024px),
-(orientation: landscape) {
-  main {
-    width: 96%;
-  }
-}
+(orientation: landscape) {}
 
 /* md */
 @media (max-width: 768px) {
