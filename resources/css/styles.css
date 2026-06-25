@@ -215,7 +215,7 @@ div .code:has(.asterisk) {
 }
 
 section .meaning {
-  text-align: justify;
+  text-align: left;
 }
 
 .example {
@@ -227,7 +227,6 @@ section .meaning {
   font-size: var(--fluid-p-16-18);
   position: relative;
   left: 1rem;
-  margin: 2rem 0;
 }
 
 .asterisk {
