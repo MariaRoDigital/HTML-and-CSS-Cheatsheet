@@ -21,31 +21,31 @@ body {
 }
 
 h1 {
-  font-size: var(--fluid-h1-23-50);
+  font-size: var(--step-4);
 }
 
 h2 {
-  font-size: var(--fluid-h2-19-40);
+  font-size: var(--step-3);
 }
 
 h3 {
-  font-size: var(--fluid-h3-18-34);
+  font-size: var(--step-2);
 }
 
 h4 {
-  font-size: var(--fluid-h4-17-30);
+  font-size: var(--step-1);
 }
 
 h5 {
-  font-size: var(--fluid-h5-16-26);
+  font-size: var(--step-0);
 }
 
 h6 {
-  font-size: var(--fluid-h6-14-20);
+  font-size: var(--step--1);
 }
 
 p {
-  font-size: var(--fluid-p-16-18);
+  font-size: var(--step-0);
 }
 
 .bold {
