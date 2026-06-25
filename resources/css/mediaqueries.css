@@ -14,10 +14,6 @@
   .fire2 {
     right: 2rem;
   }
-
-  section {
-    grid-template-columns: 25% 50% 25%;
-  }
 }
 
 /* lg */
