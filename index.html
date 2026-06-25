@@ -7,6 +7,7 @@
   <link href='resources/css/styles.css' type='text/css' rel='stylesheet'>
   <link href='resources/css/font.css' type='text/css' rel='stylesheet'>
   <link href='resources/css/mediaqueries.css' type='text/css' rel='stylesheet'>
+  <script type='text/javascript' src='main.js' defer></script>
   <title>HTML & CSS Cheat Sheet</title>
 </head>
 
@@ -36,592 +37,652 @@
   <main>
 
     <!-- HTML Grid -->
-    <h2 class='title'>HTML Crucials (code+meaning+example)</h2>
     <section class='html'>
+      <h2 class='title full'>HTML Crucials (code+meaning+example)</h2>
 
       <!-- grid headings -->
-      <div class='sub-title'>
+      <div class='wrapper row'>
         <h3>
-          Code
-          <br><span class='asterisk mono'>*</span> = has no closing tag
+          Code<br><span class='asterisk mono'>*</span> = has no closing tag
         </h3>
-      </div>
-      <div class='sub-title'>
         <h3>Meaning</h3>
-      </div>
-      <div class='sub-title'>
         <h3>Example</h3>
       </div>
 
       <!-- !doctype -->
-      <div class='shade'>
-        <p class='code mono'>&lt!Doctype&gt</p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>Including the DOCTYPE in a document ensures that the browser makes it's best attempt at
-          following the relevant specifications in the document type. This <span class='italic'>must</span> be the first
-          thing in your document
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>&lt!Doctype html&gt</p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>&lt!Doctype&gt</p>
+        </div>
+
+        <div>
+          <p class='meaning'>Including the DOCTYPE in a document ensures that the browser makes it's best attempt at
+            following the relevant specifications in the document type. This <span class='italic'>must</span> be the
+            first
+            thing in your document
+          </p>
+        </div>
+
+        <div>
+          <p class='example mono'>&lt!Doctype html&gt</p>
+        </div>
       </div>
 
       <!-- html -->
-      <div>
-        <p class='code mono'>
-          &lthtml&gt&lt/html&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          Tells the browser that your document is an html document
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &lthtml&gt
-          <br>&lthead&gt&lt/head&gt
-          <br>&ltbody&gt
-          <br>&ltfooter&gt&lt/footer&gt
-          <br>&lt/body&gt
-          <br>&lt/html&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lthtml&gt&lt/html&gt
+          </p>
+        </div>
+
+        <div>
+          <p class='meaning'>
+            Tells the browser that your document is an html document
+          </p>
+        </div>
+
+        <div>
+          <p class='example mono'>
+            &lthtml&gt
+            <br>&lthead&gt&lt/head&gt
+            <br>&ltbody&gt
+            <br>&ltfooter&gt&lt/footer&gt
+            <br>&lt/body&gt
+            <br>&lt/html&gt
+          </p>
+        </div>
       </div>
 
       <!-- head -->
-      <div class='shade'>
-        <p class='code mono'>
-          &lthead&gt&lt/head&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          Here is where you link your meta info, stylesheets, and title. If there is an external link
-          you need to use in your code,you can include it here. <span class='important'>!Caution</span>: your head can
-          get crowded when linking many
-          font types, consider adding them as a @fontface in css
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &lthead&gt
-          <br>&ltlink href=&quotresources/style.css type=&quottext/css&quot
-          rel=&quotstylesheet&quot&gt
-          <br>&lt/head&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lthead&gt&lt/head&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            Here is where you link your meta info, stylesheets, and title. If there is an external link
+            you need to use in your code,you can include it here. <span class='important'>!Caution</span>: your head can
+            get crowded when linking many
+            font types, consider adding them as a @fontface in css
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &lthead&gt
+            <br>&ltlink href=&quotresources/style.css type=&quottext/css&quot
+            rel=&quotstylesheet&quot&gt
+            <br>&lt/head&gt
+          </p>
+        </div>
       </div>
 
       <!-- title -->
-      <div>
-        <p class='code mono'>
-          &lttitle&gt&lt/title&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          Holds the title of your page. It will be the name displayed on the browser tab
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &lttitle&gtyour cool title here&lt/title&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lttitle&gt&lt/title&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            Holds the title of your page. It will be the name displayed on the browser tab
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &lttitle&gtyour cool title here&lt/title&gt
+          </p>
+        </div>
       </div>
 
       <!-- link -->
-      <div class='shade'>
-        <p class='code mono'>
-          <span class='asterisk'>*</span><br>&ltlink&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          links your stylesheets, font typeface, and other resources that have are from an external
-          source
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &ltlink href=&quotresources/styles.css&quot type=&quottext/css&quot
-          rel=&quotstylesheet&quot&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            <span class='asterisk'>*</span><br>&ltlink&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            links your stylesheets, font typeface, and other resources that have are from an external
+            source
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltlink href=&quotresources/styles.css&quot type=&quottext/css&quot
+            rel=&quotstylesheet&quot&gt
+          </p>
+        </div>
       </div>
 
       <!-- body -->
-      <div>
-        <p class='code mono'>
-          &ltbody&gt&lt/body&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          Includes all the page elements that will be shown on the user side. Anything that is within this area will
-          appear on the webpage
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &ltbody&gt<br>your page content here<br>&lt/body&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltbody&gt&lt/body&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            Includes all the page elements that will be shown on the user side. Anything that is within this area will
+            appear on the webpage
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltbody&gt<br>your page content here<br>&lt/body&gt
+          </p>
+        </div>
       </div>
 
-      <!-- footer -->
-      <div class='shade'>
-        <p class='code mono'>
-          &ltfooter&gt&lt/footer&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          the last part of a webpage (optional depending on what the page is intended for). Here you can include
-          an
-          email, privacy policy, contact phone number, copyright symbols to a brand etc.
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &ltfooter&gt<br>email: blah@blah.com<br>contact number: 123-456-7891<br>&lt/footer&gt
-        </p>
+      <div class='wrapper row'>
+        <!-- footer -->
+        <div>
+          <p class='code mono'>
+            &ltfooter&gt&lt/footer&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            the last part of a webpage (optional depending on what the page is intended for). Here you can include
+            an
+            email, privacy policy, contact phone number, copyright symbols to a brand etc.
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltfooter&gt<br>email: blah@blah.com<br>contact number: 123-456-7891<br>&lt/footer&gt
+          </p>
+        </div>
       </div>
 
       <!-- h1 -->
-      <div>
-        <p class='code mono'>
-          &lth1&gt&lt/h1&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 36px
-        </p>
-      </div>
-      <div class='column_3'>
-        <h1 class='example mono'>
-          &lth1&gt
-        </h1>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth1&gt&lt/h1&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 36px
+          </p>
+        </div>
+        <div>
+          <h1 class='example mono'>
+            &lth1&gt
+          </h1>
+        </div>
       </div>
 
       <!-- h2 -->
-      <div class='shade'>
-        <p class='code mono'>
-          &lth2&gt&lt/h2&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 30px
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <h2 class='example mono'>
-          &lth2&gt
-        </h2>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth2&gt&lt/h2&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 30px
+          </p>
+        </div>
+        <div>
+          <h2 class='example mono'>
+            &lth2&gt
+          </h2>
+        </div>
       </div>
 
       <!-- h3 -->
-      <div>
-        <p class='code mono'>
-          &lth3&gt&lt/h3&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 24px
-        </p>
-      </div>
-      <div class='column_3'>
-        <h3 class='example mono'>
-          &lth3&gt
-        </h3>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth3&gt&lt/h3&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 24px
+          </p>
+        </div>
+        <div>
+          <h3 class='example mono'>
+            &lth3&gt
+          </h3>
+        </div>
       </div>
 
       <!-- h4 -->
-      <div class='shade'>
-        <p class='code mono'>
-          &lth4&gt&lt/h4&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 20px
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <h4 class='example mono'>
-          &lth4&gt
-        </h4>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth4&gt&lt/h4&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 20px
+          </p>
+        </div>
+        <div>
+          <h4 class='example mono'>
+            &lth4&gt
+          </h4>
+        </div>
       </div>
 
       <!-- h5 -->
-      <div>
-        <p class='code mono'>
-          &lth5&gt&lt/h5&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 18px
-        </p>
-      </div>
-      <div class='column_3'>
-        <h5 class='example mono'>
-          &lth5&gt
-        </h5>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth5&gt&lt/h5&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 18px
+          </p>
+        </div>
+        <div>
+          <h5 class='example mono'>
+            &lth5&gt
+          </h5>
+        </div>
       </div>
 
       <!-- h6 -->
-      <div class='shade'>
-        <p class='code mono'>
-          &lth6&gt&lt/h6&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          indicates the importance of a title or subtitle by size. The default size for this heading is 16px
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <h6 class='example mono'>
-          &lth6&gt
-        </h6>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &lth6&gt&lt/h6&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the importance of a title or subtitle by size. The default size for this heading is 16px
+          </p>
+        </div>
+        <div>
+          <h6 class='example mono'>
+            &lth6&gt
+          </h6>
+        </div>
       </div>
 
       <!-- p -->
-      <div>
-        <p class='code mono'>
-          &ltp&gt&lt/p&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          is the tag used for regular sized text in your content. The default size for this text is 16px
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &ltp&gtjust some text hangin' out&lt/p&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltp&gt&lt/p&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            is the tag used for regular sized text in your content. The default size for this text is 16px
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltp&gtjust some text hangin' out&lt/p&gt
+          </p>
+        </div>
       </div>
 
       <!-- span -->
-      <div class='shade'>
-        <p class='code mono'>
-          &ltspan&gt&lt/span&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          this tag is used to target specific words or parts of inline text you may want to style different than
-          the
-          rest of the text. It could be used as an alternative when no other tag makes sense. <span
-            class='tip'>tip</span>: This comes in handy when you want to style a word within a heading tag,
-          paragraph
-          tag or a navigation element
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &ltp&gt
-          <br>hello, I am a &ltspan&gtblue&lt/span&gt sword
-          <br>&lt/p&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltspan&gt&lt/span&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            this tag is used to target specific words or parts of inline text you may want to style different than
+            the
+            rest of the text. It could be used as an alternative when no other tag makes sense. <span
+              class='tip'>tip</span>: This comes in handy when you want to style a word within a heading tag,
+            paragraph
+            tag or a navigation element
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltp&gt
+            <br>hello, I am a &ltspan&gtblue&lt/span&gt sword
+            <br>&lt/p&gt
+          </p>
+        </div>
       </div>
 
       <!-- class -->
-      <div>
-        <p class='code mono'>
-          <span class='asterisk'>*</span><br>&ltclass&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          an attribute placed within most opening tags that let's you give your element a name to call on when
-          styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure
-            to
-            use a dash (-) instead of a space</span>
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &lth1 class=&quotmain-heading&quot&gt
-          <br>The truth about the sword
-          <br>&lt/h1&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            <span class='asterisk'>*</span><br>&ltclass&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            an attribute placed within most opening tags that let's you give your element a name to call on when
+            styling that element in CSS. <span> !caution: if there are multiple words in your class name, make sure
+              to
+              use a dash (-) instead of a space</span>
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &lth1 class=&quotmain-heading&quot&gt
+            <br>The truth about the sword
+            <br>&lt/h1&gt
+          </p>
+        </div>
       </div>
 
       <!-- id -->
-      <div class='shade'>
-        <p class='code mono'>
-          <span class='asterisk'>*</span><br>&ltid&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          an attribute placed within any opening tag that let's you give your element a name that is unique to
-          it.
-          You can use the name to call on this element to style it in CSS. <span class='important'>!caution</span>:
-          there must be no other element that has the same id name within your content
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &lth1 id=&quotsword-title&quot&gt
-          <br>The Sword You Need
-          <br>&lt/h1&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            <span class='asterisk'>*</span><br>&ltid&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            an attribute placed within any opening tag that let's you give your element a name that is unique to
+            it.
+            You can use the name to call on this element to style it in CSS. <span class='important'>!caution</span>:
+            there must be no other element that has the same id name within your content
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &lth1 id=&quotsword-title&quot&gt
+            <br>The Sword You Need
+            <br>&lt/h1&gt
+          </p>
+        </div>
       </div>
 
       <!-- div -->
-      <div>
-        <p class='code mono'>
-          &ltdiv&gt&lt/div&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to
-          separate by theme or section
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &ltdiv&gt<br>&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltdiv&gt&lt/div&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            is used to separate sections in content. Imagine these as a box. Divs can be nested within divs to
+            separate by theme or section
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltdiv&gt<br>&lth1&gtThe Quest&lt/h1&gt<br>&lt/div&gt
+          </p>
+        </div>
       </div>
 
       <!-- img -->
-      <div class='shade'>
-        <p class='code mono'>
-          <span class='asterisk'>*</span><br>&ltimg&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          allows you to insert an image into your content. To indicate the source, and properly link the image
-          you
-          must include the <span class='mono'>src</span> attribute
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          relative link: &ltimg src=&quotresources/images/the-image&gt
-          <br>
-          <br>absolute link: &ltimg
-          src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            <span class='asterisk'>*</span><br>&ltimg&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            allows you to insert an image into your content. To indicate the source, and properly link the image
+            you
+            must include the <span class='mono'>src</span> attribute
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            relative link: &ltimg src=&quotresources/images/the-image&gt
+            <br>
+            <br>absolute link: &ltimg
+            src=&quothttps://thatwebsite/thatsubpage/that-image&quot&gt
+          </p>
+        </div>
       </div>
 
       <!-- br -->
-      <div>
-        <p class='code mono'>
-          <span class='asterisk'>*</span><br>&ltbr&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          allows you to break the line of text you are on to begin a new line of text
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &ltp&gt
-          <br>this is my first line of text&ltbr&gt
-          <br>this is me starting another
-          line&ltbr&gt
-          <br>this is yet
-          another line
-          <br>&lt/p&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            <span class='asterisk'>*</span><br>&ltbr&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            allows you to break the line of text you are on to begin a new line of text
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltp&gt
+            <br>this is my first line of text&ltbr&gt
+            <br>this is me starting another
+            line&ltbr&gt
+            <br>this is yet
+            another line
+            <br>&lt/p&gt
+          </p>
+        </div>
       </div>
 
       <!-- em -->
-      <div class='shade'>
-        <p class='code mono'>
-          &ltem&gt&lt/em&gt
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          makes your text appear in italic
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &ltp&gt
-          <br>this sword &ltem&gtwill&lt/em&gt get me through the dungeons
-          <br>&lt/p&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltem&gt&lt/em&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            makes your text appear in italic
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltp&gt
+            <br>this sword &ltem&gtwill&lt/em&gt get me through the dungeons
+            <br>&lt/p&gt
+          </p>
+        </div>
       </div>
 
       <!-- strong -->
-      <div>
-        <p class='code mono'>
-          &ltstrong&gt&lt/strong&gt
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          makes your text appear bold
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          &ltp&gt
-          <br>this &ltstrong>sword&lt/strong&gt will get me through the dungeons
-          <br>&lt/p&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            &ltstrong&gt&lt/strong&gt
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            makes your text appear bold
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltp&gt
+            <br>this &ltstrong>sword&lt/strong&gt will get me through the dungeons
+            <br>&lt/p&gt
+          </p>
+        </div>
       </div>
     </section><!-- end of html -->
 
     <p class='back-to-top-link'><a href='#top'>back to top</a></p>
 
     <!-- css crucials begins -->
-    <h2 class='title'>
+    <h2 class='title full'>
       The CSS Crucials (code+meaning+example)
     </h2>
     <section class='css'>
 
       <!-- grid headings -->
-      <div class='sub-title'>
-        <h3>
-          Code <br><span class='asterisk mono'>*</span> = has no closing tag
-        </h3>
-      </div>
-      <div class='sub-title'>
-        <h3>Meaning</h3>
-      </div>
-      <div class='sub-title'>
-        <h3>Example</h3>
+      <div class='wrapper row'>
+        <div>
+          <h3>
+            Code <br><span class='asterisk mono'>*</span> = has no closing tag
+          </h3>
+        </div>
+        <div>
+          <h3>Meaning</h3>
+        </div>
+        <div>
+          <h3>Example</h3>
+        </div>
       </div>
 
       <!-- font-family -->
-      <div class='shade'>
-        <p class='code mono'>
-          font-family
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          indicates the type of font style used on the selected element.
-          <br>
-          <br>
-          tip = consider including fallback
-          fonts
-          to
-          make sure your code works well on all modern browsers and older browsers
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          .blue-sword {<br>font-family: Helvetica, serif;<br>}
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            font-family
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            indicates the type of font style used on the selected element.
+            <br>
+            <br>
+            tip = consider including fallback
+            fonts
+            to
+            make sure your code works well on all modern browsers and older browsers
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            .blue-sword {<br>font-family: Helvetica, serif;<br>}
+          </p>
+        </div>
       </div>
 
       <!-- font-size -->
-      <div>
-        <p class='code mono'>
-          font-size
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          defines the size you want for the targeted element text
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          .blue-sword {<br>font-size: 20px;<br>}
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            font-size
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            defines the size you want for the targeted element text
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            .blue-sword {<br>font-size: 20px;<br>}
+          </p>
+        </div>
       </div>
 
       <!-- color -->
-      <div class='shade'>
-        <p class='code mono'>
-          color
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          assigns the color to the selected element text. The color can also be assigned using a HEX code:
-          #000000
-          or RGB: rgb(134, 133, 56)
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          .blue-sword {<br><span>color: blue;</span><br>}
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            color
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            assigns the color to the selected element text. The color can also be assigned using a HEX code:
+            #000000
+            or RGB: rgb(134, 133, 56)
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            .blue-sword {<br><span>color: blue;</span><br>}
+          </p>
+        </div>
       </div>
 
       <!-- background-color -->
-      <div>
-        <p class='code mono'>
-          background-color
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          assigns the background color of the selected element
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          .blue-sword {<br><span>background-color: light blue;</span><br>}
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            background-color
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            assigns the background color of the selected element
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            .blue-sword {<br><span>background-color: light blue;</span><br>}
+          </p>
+        </div>
       </div>
 
       <!-- padding -->
-      <div class='shade'>
-        <p class='code mono'>
-          padding
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          the space between the content and the border of a box. It creates a cushion to push the border
-          farther
-          from the content to help make content easier to read
-        </p>
-      </div>
-      <div class='shade three-rows'>
-        <!-- image is in container -->
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            padding
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            the space between the content and the border of a box. It creates a cushion to push the border
+            farther
+            from the content to help make content easier to read
+          </p>
+        </div>
+        <div class='three-rows'>
+          <!-- image is in container -->
+        </div>
       </div>
 
       <!-- border -->
-      <div>
-        <p class='code mono'>
-          border
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          the space between padding and the margin. It can be described as the picture frame that holds the
-          picture
-          inside
-        </p>
-      </div>
-      <div class='shade example mono'>
-        <img src='resources/images/padding-border-margin-removebg.png' type='image/png' class='box-model-first-position'
-          alt=''>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            border
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            the space between padding and the margin. It can be described as the picture frame that holds the
+            picture
+            inside
+          </p>
+        </div>
+        <div class='example mono'>
+          <img src='resources/images/padding-border-margin-removebg.png' type='image/png'
+            class='box-model-first-position' alt=''>
+        </div>
       </div>
 
       <!-- margin -->
-      <div class='shade'>
-        <p class='code mono'>
-          margin
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          the space outside of the border. This can be described as a cushion to push other elements of
-          different
-          content boxes, away
-        </p>
-      </div>
-      <div class='example mono shade'>
-        <img src='resources/images/padding-border-margin-removebg.png' type='image/png'
-          class='box-model-second-position' alt=''>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            margin
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            the space outside of the border. This can be described as a cushion to push other elements of
+            different
+            content boxes, away
+          </p>
+        </div>
+        <div class='example mono'>
+          <img src='resources/images/padding-border-margin-removebg.png' type='image/png'
+            class='box-model-second-position' alt=''>
+        </div>
       </div>
     </section><!-- end of css crucials -->
 
@@ -632,104 +693,97 @@
     <!-- beginner concept struggles -->
 
     <!-- grid headings -->
-
-
-    <!-- fix to have section before h2 -->
-    <h2 class='title'>
-      Concepts that beginner Full Stack developers struggle with
-    </h2>
     <section class='struggles'>
-
-
-
-
-
-      <div class='sub-title'>
+      <h2 class='title full'>Concepts that beginner Full Stack developers struggle with
+      </h2>
+      <div class='wrapper row'>
         <h3>Code
           <br><span class='asterisk mono'>*</span> = has no closing tag
         </h3>
-      </div>
-      <div class='sub-title'>
         <h3>Meaning</h3>
-      </div>
-      <div class='sub-title'>
         <h3>Example</h3>
       </div>
 
       <!-- margin (horizontal alignment) -->
-      <div class='shade'>
-        <p class='code mono'>
-          margin</span> (horizontal alignment)
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          the best way to think about this type of alignment is to think about your box as it appears in
-          default,
-          margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the
-          shorthand
-          for this. This styles only left and right sides to automatically align the sides
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          margin: 0 auto 0 auto;
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            margin</span> (horizontal alignment)
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            the best way to think about this type of alignment is to think about your box as it appears in
+            default,
+            margin is at a default of 0. The margin is styled top, right, bottom, left. To the right is the
+            shorthand
+            for this. This styles only left and right sides to automatically align the sides
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            margin: 0 auto 0 auto;
+          </p>
+        </div>
       </div>
 
       <!-- video (source, src) -->
-      <div>
-        <p class='code mono'>
-          video (source, src)
-        </p>
-      </div>
-      <div>
-        <p class='meaning'>
-          video has two words that point to the same attribute. One of the methods uses only one attribute
-          to
-          source
-          a single video. The other method uses both attributes to source multiple videos at once
-        </p>
-      </div>
-      <div class='column_3'>
-        <p class='example mono'>
-          one video:
-          <br>
-          &ltvideo src=&quotresources/videos/a-sword.mp4&quot&gtmessage for when
-          video
-          isn't supported
-          here&lt/video&gt
-          <br>
-          <br>multiple videos:
-          <br>&ltvideo&gt
-          <br>&ltsource
-          src=&quotresources/videos/a-sword.mp4&quot&gt
-          <br>&ltsource src=&quotresources/videos/swords.mp4&quot&gt&lt/video&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            video (source, src)
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            video has two words that point to the same attribute. One of the methods uses only one attribute
+            to
+            source
+            a single video. The other method uses both attributes to source multiple videos at once
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            one video:
+            <br>
+            &ltvideo src=&quotresources/videos/a-sword.mp4&quot&gtmessage for when
+            video
+            isn't supported
+            here&lt/video&gt
+            <br>
+            <br>multiple videos:
+            <br>&ltvideo&gt
+            <br>&ltsource
+            src=&quotresources/videos/a-sword.mp4&quot&gt
+            <br>&ltsource src=&quotresources/videos/swords.mp4&quot&gt&lt/video&gt
+          </p>
+        </div>
       </div>
 
       <!-- autoplay -->
-      <div class='shade'>
-        <p class='code mono'>
-          autoplay
-        </p>
-      </div>
-      <div class='shade'>
-        <p class='meaning'>
-          some browsers will not play a video automatically. You'll break your head trying to figure out
-          why
-          your
-          video isn't playing when your code is all correct. The best way to make sure this doesn't happen
-          is
-          by
-          using
-          the attribute 'muted'
-        </p>
-      </div>
-      <div class='shade column_3'>
-        <p class='example mono'>
-          &ltvideo src=&quotresources/that-video&quot controls autoplay muted&gt&lt/video&gt
-        </p>
+      <div class='wrapper row'>
+        <div>
+          <p class='code mono'>
+            autoplay
+          </p>
+        </div>
+        <div>
+          <p class='meaning'>
+            some browsers will not play a video automatically. You'll break your head trying to figure out
+            why
+            your
+            video isn't playing when your code is all correct. The best way to make sure this doesn't happen
+            is
+            by
+            using
+            the attribute 'muted'
+          </p>
+        </div>
+        <div>
+          <p class='example mono'>
+            &ltvideo src=&quotresources/that-video&quot controls autoplay muted&gt&lt/video&gt
+          </p>
+        </div>
       </div>
     </section><!-- end of beginner struggles-->
 
