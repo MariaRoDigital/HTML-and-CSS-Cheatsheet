@@ -148,6 +148,7 @@ header p:not([class="author"]) {
   color: rgb(255, 253, 253);
 }
 
+/* nav begins */
 nav {
   display: grid;
   justify-content: center;
@@ -175,6 +176,7 @@ a:hover {
   color: rgb(155, 154, 255);
 }
 
+/* main content begins */
 main {
   justify-self: center;
 }
