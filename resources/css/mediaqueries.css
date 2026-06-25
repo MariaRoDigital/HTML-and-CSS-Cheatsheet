@@ -66,6 +66,10 @@
     display: block;
   }
 
+  .wrapper {
+    display: block;
+  }
+
   .fire {
     width: 8rem;
   }
