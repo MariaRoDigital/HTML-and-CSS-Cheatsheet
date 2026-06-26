@@ -66,7 +66,7 @@ p {
 }
 
 .h3 {
-font-size: var(--step-2);
+  font-size: var(--step-2);
 }
 
 .h4 {
@@ -183,7 +183,7 @@ main {
 
 section {
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 25% 45% 30%;
 }
 
 section div {
@@ -192,6 +192,7 @@ section div {
 }
 
 .title {
+  text-align: center;
   justify-self: center;
 }
 
