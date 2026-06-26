@@ -195,6 +195,10 @@ section div {
   justify-self: center;
 }
 
+.mobile-sm-txt {
+  font-size: var(--step-1)
+}
+
 .has-note {
   line-height: .8;
 }
